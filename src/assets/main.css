@@ -1,0 +1,18 @@
+@import './base.css';
+
+
+#app {
+  overflow-x: hidden;
+  
+}
+@media (hover: hover) {
+  a:hover {
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+  }
+  
+  
+}
