@@ -79,9 +79,9 @@ export default {
       <Separator :width=100 :height=8></Separator>
     </div>
     <div class="screen-list">
-      <Card img="/image/aloevera.jpg" title="How to use mindfullness in your every day life" />
-      <Card img="/image/walking.png" title="What are the best walking meditation" />
-      <Card img="/image/plant silver.jpg" title="How to go deep into the mind of hope" />
+      <Card img="./image/aloevera.jpg" title="How to use mindfullness in your every day life" />
+      <Card img="./image/walking.png" title="What are the best walking meditation" />
+      <Card img="./image/plant silver.jpg" title="How to go deep into the mind of hope" />
 
     </div>
   </div>
