@@ -50,15 +50,15 @@ export default {
 
 <template>
   <div class="btn-back-home" :class="{ 'btn-show': show_btn_up }" @click="scroll_to_start">
-    <font-awesome-icon icon="fa-solid fa-arrow-up"></font-awesome-icon>
+    <a href="#"><font-awesome-icon icon="fa-solid fa-arrow-up"></font-awesome-icon></a>
   </div>
   <div class="screen parallax-container bg-special border-white">
     <div class="banniere" :style="layerStyle(2)">
       <header>
         <div class="logo">LO</div>
         <nav :class="{ show_nav: nav_show, hide_nav: !nav_show }">
-          <div class="nav-item"><a href="#about">A B O U T</a></div>
-          <div class="nav-item"><a href="#article">A R T I C L E S</a></div>
+          <div class="nav-item border-bottom"><a href="#about">A B O U T</a></div>
+          <div class="nav-item border-bottom"><a href="#article">A R T I C L E S</a></div>
           <div class="nav-item btn-subs"><a href="#subscribe">S U B S C R I B E</a></div>
         </nav>
         <div class="menu-bars" @click="nav_show = !nav_show">
@@ -112,10 +112,10 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 30px;
+  font-size: 20px;
   padding: 20px;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   transition: all 0.5s ease-in-out;
   box-shadow: 0px 0px 5px grey;
@@ -231,10 +231,22 @@ nav {
 
 }
 
-nav a {
+nav a, .btn-back-home a {
   text-decoration: none;
   color: black;
+  transition: all 0.1s ;
+
 }
+nav .border-bottom:hover{
+  border-bottom: 2px solid grey;
+  color : grey;
+}
+
+nav .border-bottom{
+  transition: all 0.1s ;
+  padding: 10px;
+}
+
 
 @keyframes animate_from_right {
   from {
@@ -327,6 +339,7 @@ background: linear-gradient(90deg, rgba(218,224,214,1) 0%, rgba(255,255,255,1) 5
   margin: 20px;
 }
 
+
 @media (max-width : 1070px) {
   .latest-article {
     height: 100%;
@@ -356,6 +369,10 @@ background: linear-gradient(90deg, rgba(218,224,214,1) 0%, rgba(255,255,255,1) 5
 
   .nav-item {
     margin: 10px 20px;
+  }
+
+  .nav-item :hover{
+    color: rgb(99, 99, 99);
   }
 
   .title {

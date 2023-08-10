@@ -5,7 +5,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/ufc-w1-lombok/',
+  // base: '/ufc-w1-lombok/',
   plugins: [
     vue(),
   ],
