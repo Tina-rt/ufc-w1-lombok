@@ -12,7 +12,7 @@ export default {
 <template>
     <div class="about-section">
         <div class="about-image">
-            <img src="/image/garden.avif" alt="Garden, image, jardin">
+            <img src="/image/garden.jpg" lazy-loading="true" alt="Garden, image, jardin">
         </div>
         <div class="about-text">
             <div class="about-title">ABOUT</div>
