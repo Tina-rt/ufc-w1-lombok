@@ -353,7 +353,7 @@ background: linear-gradient(90deg, rgba(218,224,214,1) 0%, rgba(255,255,255,1) 5
 
   nav {
     /* display: none; */
-    transform: translateX(100%);
+    transform: translateX(110%);
     flex-direction: column;
     justify-content: start;
     align-items: start;
