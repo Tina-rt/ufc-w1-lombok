@@ -56,10 +56,7 @@
   src: url(./fonts/ReemKufi-Medium.ttf);
 }
 
-@font-face {
-  font-family: Montserrat;
-  src: url(./fonts/Montserrat-Medium.ttf);
-}
+
 
 body, html {
   padding: 0;

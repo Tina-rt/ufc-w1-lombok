@@ -25,6 +25,8 @@ export default {
 </template>
 
 <style scoped>
+/* @import url('https://fonts.cdnfonts.com/css/montserrat'); */
+@import url('https://fonts.cdnfonts.com/css/sanva');
 .card {
     width: 300px;
     height: 400px;
@@ -55,7 +57,7 @@ export default {
 .card-title {
     padding: 40px;
     text-align: center;
-    font-family: Montserrat;
+    font-family: 'Sanva', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
